@@ -1,0 +1,1517 @@
+2015/09/07 11:06:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/opentop/index.php/gii
+---
+2015/09/07 11:06:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/opentop/index.php/gii
+---
+2015/09/07 11:47:47 [error] [php] include(RController.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.16.bca042\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(3): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(354): require()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/user
+in C:\xampp\htdocs\opentop\protected\controllers\UserController.php (3)
+in C:\xampp\htdocs\opentop\index.php (13)
+2015/09/07 11:48:14 [error] [exception.CException] exception 'CException' with message 'Filter "rights" is invalid. Controller "UserController" does not have the filter method "filterrights".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php:46
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(72): CInlineFilter::create(Object(UserController), 'rights')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain::create(Object(UserController), Object(CInlineAction), Array)
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('')
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/opentop/index.php/user
+---
+2015/09/07 11:48:55 [error] [exception.CException] exception 'CException' with message 'Property "User.status" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(161): CComponent->__set('status', '< 255')
+#1 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(144): CActiveRecord->__set('status', '< 255')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/opentop/index.php/user
+HTTP_REFERER=http://localhost/opentop/index.php/site/login
+---
+2015/09/07 11:49:22 [error] [php] include(Country.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.16.bca042\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\opentop\protected\views\user\admin.php(56): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): UserController->renderInternal()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): UserController->renderFile()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): UserController->renderPartial()
+#5 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(150): UserController->render()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): UserController->runActionWithFilters()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): UserController->run()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/user
+in C:\xampp\htdocs\opentop\protected\views\user\admin.php (56)
+in C:\xampp\htdocs\opentop\protected\controllers\UserController.php (150)
+in C:\xampp\htdocs\opentop\index.php (13)
+2015/09/07 11:55:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('login')
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/opentop/index.php/user/login
+---
+2015/09/07 12:47:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/css/style.css
+HTTP_REFERER=http://localhost/opentop/index.php/user/login
+---
+2015/09/07 12:48:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/css/style.css
+HTTP_REFERER=http://localhost/opentop/index.php/user/login
+---
+2015/09/07 12:49:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/css/style.css
+HTTP_REFERER=http://localhost/opentop/index.php/user/login
+---
+2015/09/07 12:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index.html')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/index.html
+HTTP_REFERER=http://localhost/opentop/index.php/user/login
+---
+2015/09/07 12:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/css/style.css
+HTTP_REFERER=http://localhost/opentop/index.php/user/login
+---
+2015/09/07 12:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/css/style.css
+HTTP_REFERER=http://localhost/opentop/index.php/user/login
+---
+2015/09/07 12:54:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/css/style.css
+HTTP_REFERER=http://localhost/opentop/index.php/user/login
+---
+2015/09/07 12:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/css/style.css
+HTTP_REFERER=http://localhost/opentop/index.php/user/login
+---
+2015/09/07 12:56:31 [error] [php] Undefined variable: model (C:\xampp\htdocs\opentop\protected\views\user\login.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(185): UserController->render()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/user/login
+in C:\xampp\htdocs\opentop\protected\views\user\login.php (28)
+in C:\xampp\htdocs\opentop\protected\controllers\UserController.php (185)
+in C:\xampp\htdocs\opentop\index.php (13)
+2015/09/07 12:56:59 [error] [php] Undefined variable: model (C:\xampp\htdocs\opentop\protected\views\user\login.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(185): UserController->render()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/user/login
+in C:\xampp\htdocs\opentop\protected\views\user\login.php (28)
+in C:\xampp\htdocs\opentop\protected\controllers\UserController.php (185)
+in C:\xampp\htdocs\opentop\index.php (13)
+2015/09/07 13:57:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/create".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/create')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/opentop/index.php/message/create
+HTTP_REFERER=http://localhost/opentop/index.php
+---
+2015/09/07 13:59:08 [error] [php] include(RController.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.16.bca042\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(3): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(354): require()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/message
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (3)
+in C:\xampp\htdocs\opentop\index.php (13)
+2015/09/07 13:59:43 [error] [exception.CException] exception 'CException' with message 'Property "Message.status" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(161): CComponent->__set('status', '< 255')
+#1 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(144): CActiveRecord->__set('status', '< 255')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionAdmin()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message')
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/opentop/index.php/message
+---
+2015/09/07 14:00:20 [error] [php] include(C:\xampp\htdocs\opentop\protected\extensions\CJuiDateTimePicker\CJuiDateTimePicker.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.16.bca042\framework\YiiBase.php:404)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWidgetFactory.php(146): import()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): MessageController->createWidget()
+#3 C:\xampp\htdocs\opentop\protected\views\message\_form.php(53): MessageController->widget()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): MessageController->renderInternal()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): MessageController->renderFile()
+#7 C:\xampp\htdocs\opentop\protected\views\message\create.php(18): MessageController->renderPartial()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): MessageController->renderInternal()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): MessageController->renderFile()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): MessageController->renderPartial()
+#12 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(81): MessageController->render()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionCreate()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): MessageController->runAction()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): MessageController->filterAccessControl()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): MessageController->runActionWithFilters()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): MessageController->run()
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/message/create
+in C:\xampp\htdocs\opentop\protected\views\message\_form.php (53)
+in C:\xampp\htdocs\opentop\protected\views\message\create.php (18)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (81)
+2015/09/07 14:07:00 [error] [php] include(RController.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.16.bca042\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(3): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(354): require()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/message/create
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (3)
+in C:\xampp\htdocs\opentop\index.php (13)
+2015/09/07 14:07:38 [error] [exception.CException] exception 'CException' with message 'Filter "rights" is invalid. Controller "MessageController" does not have the filter method "filterrights".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php:46
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(72): CInlineFilter::create(Object(MessageController), 'rights')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain::create(Object(MessageController), Object(CInlineAction), Array)
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('create')
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/create')
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\opentop\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/opentop/index.php/message/create
+---
+2015/09/07 14:21:06 [error] [php] include(UserType.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.16.bca042\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\opentop\protected\views\user\_form.php(45): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): UserController->renderInternal()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): UserController->renderFile()
+#4 C:\xampp\htdocs\opentop\protected\views\user\update.php(22): UserController->renderPartial()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): UserController->renderInternal()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): UserController->renderFile()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): UserController->renderPartial()
+#9 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(98): UserController->render()
+#10 unknown(0): UserController->actionUpdate()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): UserController->runActionWithFilters()
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): UserController->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/user/update/1
+in C:\xampp\htdocs\opentop\protected\views\user\_form.php (45)
+in C:\xampp\htdocs\opentop\protected\views\user\update.php (22)
+in C:\xampp\htdocs\opentop\protected\controllers\UserController.php (98)
+2015/09/07 15:03:44 [error] [php] Undefined variable: _SESSION (C:\xampp\htdocs\opentop\protected\views\layouts\main.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\opentop\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\opentop\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php
+in C:\xampp\htdocs\opentop\protected\views\layouts\main.php (35)
+in C:\xampp\htdocs\opentop\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\opentop\protected\controllers\SiteController.php (32)
+2015/09/07 15:03:52 [error] [php] Undefined variable: _SESSION (C:\xampp\htdocs\opentop\protected\views\layouts\main.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\opentop\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\opentop\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php
+in C:\xampp\htdocs\opentop\protected\views\layouts\main.php (35)
+in C:\xampp\htdocs\opentop\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\opentop\protected\controllers\SiteController.php (32)
+2015/09/07 15:08:33 [error] [php] Undefined variable: _SESSION (C:\xampp\htdocs\opentop\protected\views\layouts\main.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\opentop\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CViewAction.php(140): SiteController->render()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CAction.php(76): CViewAction->run()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CViewAction->runWithParams()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/site/page?view=about
+in C:\xampp\htdocs\opentop\protected\views\layouts\main.php (35)
+in C:\xampp\htdocs\opentop\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\opentop\index.php (13)
+2015/09/07 15:14:27 [error] [php] Undefined variable: _SESSION (C:\xampp\htdocs\opentop\protected\views\layouts\main.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\opentop\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\opentop\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/site/index
+in C:\xampp\htdocs\opentop\protected\views\layouts\main.php (37)
+in C:\xampp\htdocs\opentop\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\opentop\protected\controllers\SiteController.php (32)
+2015/09/07 15:14:46 [error] [php] Undefined variable: _SESSION (C:\xampp\htdocs\opentop\protected\views\layouts\main.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\opentop\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\opentop\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/site/index
+in C:\xampp\htdocs\opentop\protected\views\layouts\main.php (37)
+in C:\xampp\htdocs\opentop\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\opentop\protected\controllers\SiteController.php (32)
+2015/09/07 15:19:27 [error] [php] Undefined variable: _SESSION (C:\xampp\htdocs\opentop\protected\views\layouts\main.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\opentop\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CViewAction.php(140): SiteController->render()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CAction.php(76): CViewAction->run()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CViewAction->runWithParams()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/site/page?view=about
+in C:\xampp\htdocs\opentop\protected\views\layouts\main.php (30)
+in C:\xampp\htdocs\opentop\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\opentop\index.php (13)
+2015/09/07 15:23:50 [error] [php] Undefined variable: _SESSION (C:\xampp\htdocs\opentop\protected\views\layouts\main.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\opentop\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\opentop\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\opentop\index.php(13): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/site/index
+in C:\xampp\htdocs\opentop\protected\views\layouts\main.php (30)
+in C:\xampp\htdocs\opentop\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\opentop\protected\controllers\SiteController.php (32)
+2015/09/07 17:45:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'sltecglo_opentop'@'localhost' (using password: YES)' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1460): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\opentop\protected\components\UserIdentity.php(45): CActiveRecord->find('username = :use...', Array)
+#8 C:\xampp\htdocs\opentop\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 C:\xampp\htdocs\opentop\protected\controllers\SiteController.php(94): CModel->validate()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('login')
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/opentop/index.php/site/login
+HTTP_REFERER=http://localhost/opentop/index.php/site/login
+---
+2015/09/07 17:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('logout')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('logout')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/logout')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/user/logout
+HTTP_REFERER=http://localhost/opentop/index.php
+---
+2015/09/07 18:01:55 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.getId" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CWebUser.php(146): CComponent->__get('getId')
+#1 C:\xampp\htdocs\opentop\protected\views\layouts\main.php(38): CWebUser->__get('getId')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\opentop\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\opentop\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/opentop/index.php
+---
+2015/09/07 18:05:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/admin')
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/opentop/index.php/message/admin
+HTTP_REFERER=http://localhost/opentop/index.php
+---
+2015/09/07 18:23:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/opentop/index.php/message/received
+HTTP_REFERER=http://localhost/opentop/index.php/message/admin
+---
+2015/09/07 18:23:58 [warning] [application] Failed to set unsafe attribute "id" of "Message".
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (267)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 18:47:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('read')
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/read')
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/opentop/index.php/message/read/1
+---
+2015/09/07 18:47:28 [error] [php] Undefined variable: model (C:\xampp\htdocs\opentop\protected\views\message\readMessage.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): MessageController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): MessageController->renderPartial()
+#2 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(281): MessageController->render()
+#3 unknown(0): MessageController->actionRead()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): MessageController->runAction()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): MessageController->filterAccessControl()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): MessageController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): MessageController->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\opentop\index.php(14): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/message/read/1
+in C:\xampp\htdocs\opentop\protected\views\message\readMessage.php (2)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (281)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 19:43:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/delete')
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/opentop/index.php/message/delete/1?ajax=message-grid
+HTTP_REFERER=http://localhost/opentop/index.php/message/admin
+---
+2015/09/07 19:44:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`opentop_assignment`.`user_comment`, CONSTRAINT `user_comment_ibfk_2` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`)). The SQL statement executed was: DELETE FROM `message` WHERE `message`.`id`=1.
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (234)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 19:44:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`opentop_assignment`.`user_comment`, CONSTRAINT `user_comment_ibfk_2` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`)). The SQL statement executed was: DELETE FROM `message` WHERE `message`.`id`=1' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1807): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1227): CActiveRecord->deleteByPk('1')
+#2 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(234): CActiveRecord->delete()
+#3 [internal function]: MessageController->actionDelete('1')
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(MessageController), Array)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MessageController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1116): CFilterChain->run()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('delete')
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/delete')
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/opentop/index.php/message/delete/1?ajax=message-grid
+HTTP_REFERER=http://localhost/opentop/index.php/message/admin
+---
+2015/09/07 19:46:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`opentop_assignment`.`user_comment`, CONSTRAINT `user_comment_ibfk_2` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`)). The SQL statement executed was: DELETE FROM `message` WHERE `message`.`id`=1.
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (234)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 19:46:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`opentop_assignment`.`user_comment`, CONSTRAINT `user_comment_ibfk_2` FOREIGN KEY (`message_id`) REFERENCES `message` (`id`)). The SQL statement executed was: DELETE FROM `message` WHERE `message`.`id`=1' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1807): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1227): CActiveRecord->deleteByPk('1')
+#2 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(234): CActiveRecord->delete()
+#3 [internal function]: MessageController->actionDelete('1')
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(MessageController), Array)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MessageController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1116): CFilterChain->run()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('delete')
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/delete')
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/opentop/index.php/message/delete/1?ajax=message-grid
+HTTP_REFERER=http://localhost/opentop/index.php/message/admin
+---
+2015/09/07 19:49:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100.
+in C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php (83)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (277)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 19:49:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(808): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+HTTP_REFERER=http://localhost/opentop/index.php/message/received
+---
+2015/09/07 20:08:25 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "UserMessage" is not defined in active record class "Message".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(299): CActiveFinder->buildJoinTree(Object(CJoinElement), 'UserMessage')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(912): CActiveFinder->__construct(Object(Message), Array)
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1609): CActiveRecord->getActiveFinder(Array)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:08:44 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "usermessage" is not defined in active record class "Message".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(299): CActiveFinder->buildJoinTree(Object(CJoinElement), 'usermessage')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(912): CActiveFinder->__construct(Object(Message), Array)
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1609): CActiveRecord->getActiveFinder(Array)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:09:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100.
+in C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php (83)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (277)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 20:09:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(808): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:11:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100.
+in C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php (83)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (277)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 20:11:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(808): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:15:20 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_message.user_id' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `message` `t`  LEFT OUTER JOIN `user_message` `userMessages` ON (`userMessages`.`message_id`=`t`.`id`) WHERE (user_message.user_id=:ycp0).
+in C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php (83)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (277)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 20:15:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_message.user_id' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `message` `t`  LEFT OUTER JOIN `user_message` `userMessages` ON (`userMessages`.`message_id`=`t`.`id`) WHERE (user_message.user_id=:ycp0)' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:17:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100.
+in C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php (83)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (277)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 20:17:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(808): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:17:54 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_message.user_id' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `message` `t`  LEFT OUTER JOIN `user_message` `userMessages` ON (`userMessages`.`message_id`=`t`.`id`) WHERE (user_message.user_id=:ycp0).
+in C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php (83)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (277)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 20:17:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_message.user_id' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `message` `t`  LEFT OUTER JOIN `user_message` `userMessages` ON (`userMessages`.`message_id`=`t`.`id`) WHERE (user_message.user_id=:ycp0)' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:18:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100.
+in C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php (83)
+in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php (277)
+in C:\xampp\htdocs\opentop\index.php (14)
+2015/09/07 20:18:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userMessages.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`content` AS `t0_c2`, `t`.`details` AS `t0_c3`, `t`.`created` AS `t0_c4`, `t`.`modified` AS `t0_c5` FROM `message` `t`  WHERE (userMessages.user_id=:ycp0) LIMIT 100' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(808): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\opentop\protected\views\message\adminReceived.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('adminReceived', Array, true)
+#17 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#31 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:21:13 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.type" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CWebUser.php(146): CComponent->__get('type')
+#1 C:\xampp\htdocs\opentop\protected\views\layouts\main.php(37): CWebUser->__get('type')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\opentop\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#27 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:21:38 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.userType" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CWebUser.php(146): CComponent->__get('userType')
+#1 C:\xampp\htdocs\opentop\protected\views\layouts\main.php(37): CWebUser->__get('userType')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\opentop\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#27 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:23:17 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.userType" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CWebUser.php(146): CComponent->__get('userType')
+#1 C:\xampp\htdocs\opentop\protected\views\layouts\main.php(37): CWebUser->__get('userType')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\opentop\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#27 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:23:55 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.UserType" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CWebUser.php(146): CComponent->__get('UserType')
+#1 C:\xampp\htdocs\opentop\protected\views\layouts\main.php(37): CWebUser->__get('UserType')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\opentop\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(277): CController->render('adminReceived', Array)
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionReceived()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('received')
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/receive...')
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#27 {main}
+REQUEST_URI=/opentop/index.php/message/received
+---
+2015/09/07 20:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "stats".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('stats')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('stats')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/stats')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/message/stats
+HTTP_REFERER=http://localhost/opentop/index.php/message/received
+---
+2015/09/07 20:26:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('stats')
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/stats')
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/opentop/index.php/message/stats
+---
+2015/09/07 20:29:23 [error] [exception.CException] exception 'CException' with message 'MessageController cannot find the requested view "stats".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('stats', Array, true)
+#1 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(319): CController->render('stats', Array)
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): MessageController->actionStats()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('stats')
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/stats')
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/opentop/index.php/message/stats
+---
+2015/09/07 20:35:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('stats')
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/stats')
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/opentop/index.php/user/stats
+---
+2015/09/07 20:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "stats".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('stats')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('stats')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/stats')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/message/stats
+HTTP_REFERER=http://localhost/opentop/index.php/user/stats
+---
+2015/09/07 20:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "stats".' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(270): CController->missingAction('stats')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('stats')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/stats')
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/opentop/index.php/message/stats
+HTTP_REFERER=http://localhost/opentop/index.php/message/stats
+---
+2015/09/07 20:59:07 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.0" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\YiiBase.php(220): CComponent->__set('0', 'NumberOfComment...')
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\opentop\protected\views\user\stats.php(98): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('stats', Array, true)
+#10 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(196): CController->render('stats', Array)
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionStats()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('stats')
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/stats')
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/opentop/index.php/user/stats
+---
+2015/09/07 20:59:23 [error] [php] Undefined variable: nfComments (C:\xampp\htdocs\opentop\protected\models\User.php:128)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\helpers\CHtml.php(2332): User->__isset()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CDataColumn.php(144): value()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(638): CDataColumn->renderDataCell()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#9 unknown(0): CGridView->renderSection()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(181): CGridView->run()
+#13 C:\xampp\htdocs\opentop\protected\views\user\stats.php(97): UserController->widget()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): UserController->renderInternal()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): UserController->renderFile()
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): UserController->renderPartial()
+#18 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(196): UserController->render()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionStats()
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): UserController->runActionWithFilters()
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): UserController->run()
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#30 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\opentop\index.php(14): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/user/stats
+in C:\xampp\htdocs\opentop\protected\models\User.php (128)
+in C:\xampp\htdocs\opentop\protected\views\user\stats.php (97)
+in C:\xampp\htdocs\opentop\protected\controllers\UserController.php (196)
+2015/09/07 21:00:13 [error] [php] Undefined variable: nfComments (C:\xampp\htdocs\opentop\protected\models\User.php:128)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\helpers\CHtml.php(2332): User->__isset()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CDataColumn.php(144): value()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(638): CDataColumn->renderDataCell()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#9 unknown(0): CGridView->renderSection()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(181): CGridView->run()
+#13 C:\xampp\htdocs\opentop\protected\views\user\stats.php(97): UserController->widget()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): UserController->renderInternal()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): UserController->renderFile()
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): UserController->renderPartial()
+#18 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(196): UserController->render()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionStats()
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): UserController->runActionWithFilters()
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): UserController->run()
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#30 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\opentop\index.php(14): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/user/stats
+in C:\xampp\htdocs\opentop\protected\models\User.php (128)
+in C:\xampp\htdocs\opentop\protected\views\user\stats.php (97)
+in C:\xampp\htdocs\opentop\protected\controllers\UserController.php (196)
+2015/09/07 21:00:36 [error] [php] Undefined variable: nfComments (C:\xampp\htdocs\opentop\protected\models\User.php:128)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\helpers\CHtml.php(2332): User->__isset()
+#1 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CDataColumn.php(144): value()
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(638): CDataColumn->renderDataCell()
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#9 unknown(0): CGridView->renderSection()
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(181): CGridView->run()
+#13 C:\xampp\htdocs\opentop\protected\views\user\stats.php(97): UserController->widget()
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require()
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): UserController->renderInternal()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): UserController->renderFile()
+#17 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): UserController->renderPartial()
+#18 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(196): UserController->render()
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionStats()
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams()
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#22 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): UserController->runActionWithFilters()
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): UserController->run()
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#30 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\opentop\index.php(14): CWebApplication->run()
+REQUEST_URI=/opentop/index.php/user/stats
+in C:\xampp\htdocs\opentop\protected\models\User.php (128)
+in C:\xampp\htdocs\opentop\protected\views\user\stats.php (97)
+in C:\xampp\htdocs\opentop\protected\controllers\UserController.php (196)
+2015/09/07 21:13:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\opentop\protected\controllers\MessageController.php:370
+Stack trace:
+#0 C:\xampp\htdocs\opentop\protected\controllers\MessageController.php(281): MessageController->loadModel('1')
+#1 [internal function]: MessageController->actionRead('1')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(MessageController), Array)
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MessageController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('read')
+#13 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('message/read')
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/opentop/index.php/message/read/1
+---
+2015/09/07 21:58:19 [error] [exception.CException] exception 'CException' with message 'Property "UserMessage.content" is not defined.' in C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(145): CComponent->__get('content')
+#1 C:\xampp\htdocs\opentop\protected\models\User.php(139): CActiveRecord->__get('content')
+#2 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CComponent.php(188): User->getMessageDetails()
+#3 C:\xampp\htdocs\yii-1.1.16.bca042\framework\db\ar\CActiveRecord.php(183): CComponent->__isset('messageDetails')
+#4 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\helpers\CHtml.php(2332): CActiveRecord->__isset('messageDetails')
+#5 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CDataColumn.php(144): CHtml::value(Object(User), 'messageDetails')
+#6 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent(0)
+#7 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridColumn.php(154): CGridColumn->renderDataCellContent(0, Object(User))
+#8 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(638): CGridColumn->renderDataCell(0)
+#9 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell(Object(CDataColumn), 0)
+#10 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow(0)
+#11 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#15 C:\xampp\htdocs\yii-1.1.16.bca042\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#16 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(181): CBaseListView->run()
+#17 C:\xampp\htdocs\opentop\protected\views\user\stats.php(104): CBaseController->widget('zii.widgets.gri...', Array)
+#18 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#20 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#21 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(782): CController->renderPartial('stats', Array, true)
+#22 C:\xampp\htdocs\opentop\protected\controllers\UserController.php(196): CController->render('stats', Array)
+#23 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\actions\CInlineAction.php(49): UserController->actionStats()
+#24 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#26 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#28 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#29 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#30 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(291): CFilterChain->run()
+#31 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#32 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(282): CController->run('stats')
+#33 C:\xampp\htdocs\yii-1.1.16.bca042\framework\web\CWebApplication.php(141): CWebApplication->runController('user/stats')
+#34 C:\xampp\htdocs\yii-1.1.16.bca042\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 C:\xampp\htdocs\opentop\index.php(14): CApplication->run()
+#36 {main}
+REQUEST_URI=/opentop/index.php/user/stats
+---
